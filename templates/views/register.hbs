@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    {{>header}}
+    <link rel="stylesheet" href="/css/form.css">
+   </head>
+<body>
+  {{>navbar}}
+<div class="container" id="container">
+	<div class="form-container-1 sign-up-container">
+		<form action="/register" method="POST">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="First Name" value="" name="firstname" />
+			<input type="text" placeholder="Last Name" value="" name="lastname" />
+			<input type="phone" placeholder="phone no." value="" name="phone" />
+			<input type="number" placeholder="Age" value="" name="age" />
+			<input type="email" placeholder="Email" name="email" />
+			<input type="password" placeholder="Password" name="password"/>
+			<input type="password" placeholder="Confirm Password" name="confirmpassword"/>
+			<input class="btn" type="submit" value="SignUp" />
+			<a href="/login">SignIn</a>
+		</form>
+	</div>
+	
+</div>
+
+<footer>
+	<p>
+		all are reservered by sports
+	</p>
+</footer>
+</body>
+</html>
