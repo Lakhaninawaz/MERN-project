@@ -24,9 +24,6 @@ app.set("view engine", "hbs");
 app.set("views", template_path);
 hbs.registerPartials(partials_path)
 
-console.log(process
-    .env.SECRET_KEY);
-
 app.get("/", (req, res) => {
     res.render("index");
 });
