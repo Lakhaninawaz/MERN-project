@@ -63,7 +63,7 @@ app.get("/logout",auth, async(req,res)=>{
         console.log("logout successfully");
 
         await req.user.save();
-        res.status(200).render("login");
+        // res.status(200).render("login");
         res.redirect("login");
 
     } catch (error) {
@@ -114,7 +114,7 @@ app.post("/register", async (req, res) => {
             const registered = await registerDemo.save();
             // console.log("The page part", registered);
 
-            res.status(200).render("index");
+            // res.status(200).render("index");
             res.redirect("/");
 
         }else{
@@ -151,7 +151,7 @@ app.post("/login", async(req, res) => {
 
 
         if(isMatch){
-            res.status(200).render("index");
+            // res.status(200).render("index");
             res.redirect("/");
         } else{
             res.send("invalid password detailes");
