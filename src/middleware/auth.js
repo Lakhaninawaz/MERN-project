@@ -24,11 +24,11 @@ const auth = async (req, res, next) =>{
 const authenticate = async (req, res, next) => {
   // Get token from header or cookie
   const token = req.headers['authorization'] || req.cookies['jwt'];
-  console.log(token);
+  // console.log(token);
   
   if(token){
   const decodedToken = await jwt.verify(token, process.env.SECRET_KEY);
-  console.log(decodedToken);
+  // console.log(decodedToken);
     if (!decodedToken) {
       console.log('Unauthorized');
       res.status(401).send('Unauthorized');

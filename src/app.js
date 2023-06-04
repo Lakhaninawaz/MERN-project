@@ -49,7 +49,7 @@ app.get('/secret', authenticate, (req, res) => {
 app.get("/logout",auth, async(req,res)=>{
     try {
         // logout only one device
-        console.log(req.user);
+        // console.log(req.user);
 
         // req.user.tokens = req.user.tokens.filter((currentElement) =>{
         //     return currentElement.token !== req.token; 

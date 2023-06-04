@@ -1,6 +1,6 @@
 const mongosse = require("mongoose");
 
-mongosse.connect("mongodb://127.0.0.1/"+process.env.DB_HOST, {
+mongosse.connect(process.env.DB_URI, {
     useNewUrlParser:true,
     useUnifiedTopology:true
 }).then(() => {
