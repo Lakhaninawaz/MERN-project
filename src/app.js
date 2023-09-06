@@ -207,7 +207,7 @@ app.post("/login", async(req, res) => {
 //     console.log(token);
 
 //     const userVer = await 
-.verify(token, "mynameislakhaninawazhellobye");
+// .verify(token, "mynameislakhaninawazhellobye");
 //     console.log(userVer);
 // }
 
