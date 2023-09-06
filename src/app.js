@@ -206,7 +206,8 @@ app.post("/login", async(req, res) => {
 //     });
 //     console.log(token);
 
-//     const userVer = await jwt.verify(token, "mynameislakhaninawazhellobye");
+//     const userVer = await 
+.verify(token, "mynameislakhaninawazhellobye");
 //     console.log(userVer);
 // }
 
