@@ -67,8 +67,6 @@ next();
 
 // now we need to create collections
 
-const Register = new mongoose.model("Register", employeeSchema, {
-    useNewModel: true
-  });
+const Register = mongoose.model("Register", employeeSchema);
 
 module.exports = Register;
