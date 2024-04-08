@@ -9,15 +9,15 @@ const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
 const {auth, authenticate} = require("../src/middleware/auth");
 
-require("./db/conn");
+require("./src/db/conn");
 
-const Register = require("./models/registers")
+const Register = require("/src/models/registers")
 
 const port = process.env.PORT || 8000;
 
-const static_path = path.join(__dirname, "../public")
-const template_path = path.join(__dirname, "../templates/views")
-const partials_path = path.join(__dirname, "../templates/partials")
+const static_path = path.join(__dirname, "/public")
+const template_path = path.join(__dirname, "/templates/views")
+const partials_path = path.join(__dirname, "/templates/partials")
 
 app.use(express.json());
 app.use(cookieParser());
