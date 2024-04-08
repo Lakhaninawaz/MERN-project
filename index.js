@@ -7,11 +7,11 @@ const hbs = require("hbs");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
-const {auth, authenticate} = require("../src/middleware/auth");
+const {auth, authenticate} = require("./src/middleware/auth");
 
 require("./src/db/conn");
 
-const Register = require("/src/models/registers")
+const Register = require("./src/models/registers")
 
 const port = process.env.PORT || 8000;
 
